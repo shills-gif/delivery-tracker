@@ -1,0 +1,18 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# SQLite DB file
+*.db
+
+# Environment
+.env
+
+# Node / React
+node_modules/
+build/
+.env.local
+
+# OS stuff
+.DS_Store
+*.swp
