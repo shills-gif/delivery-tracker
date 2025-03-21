@@ -1,31 +1,99 @@
+/* Base App styling */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f4f8;
   min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Form styling */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tfoot tr {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tfoot tr:last-child {
+  background-color: #e8e8e8;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Optional App-logo cleanup (you can remove these if unused) */
+.App-logo {
+  display: none;
 }
 
 @keyframes App-logo-spin {
