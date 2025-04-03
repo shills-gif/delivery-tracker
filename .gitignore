@@ -16,3 +16,22 @@ build/
 # OS stuff
 .DS_Store
 *.swp
+
+# Ignore sensitive files
+*.crt
+*.key
+.env
+gdrive_credentials.json
+
+# Ignore Python venv
+venv/
+
+# Ignore SQLite DB
+*.db
+
+# Ignore build artifacts
+/frontend/build/
+/node_modules/
+
+# Optional: frontend test folders or backups
+frontend/src/src/
